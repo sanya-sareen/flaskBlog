@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+  pre_build:
+    commands:
+      - echo "Installing dependecnies"
+      - pip install flask
+  build:
+    commands:
+      - pwd
+      - ls -l
+      - python myenv\flaskblog.py
